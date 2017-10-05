@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/nav_switch"
+        app:actionLayout="@layout/action_view_switch"
+        android:title="Downloaded only" />
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_first_fragment"
+            android:icon="@drawable/ic_south_park"
+            android:title="South park" />
+        <item
+            android:id="@+id/nav_second_fragment"
+            android:icon="@drawable/ic_family_guy"
+            android:title="Family guy" />
+        <item
+            android:id="@+id/nav_third_fragment"
+            android:icon="@drawable/ic_simpsons"
+            android:title="Simpsons" />
+        <item
+            android:id="@+id/nav_fourth_fragment"
+            android:icon="@drawable/ic_futurama"
+            android:title="Futurama" />
+    </group>
+
+    <item android:title="Sub items">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:icon="@drawable/south_park"
+                    android:title="Southpark subitem " />
+                <item
+                    android:icon="@drawable/simpsons"
+                    android:title="Simpsons subitem" />
+            </group>
+        </menu>
+    </item>
+</menu>
